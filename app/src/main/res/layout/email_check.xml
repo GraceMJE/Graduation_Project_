@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Email"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/email_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingEnd="50dp"
+            android:text="이메일 인증"
+            android:textSize="19sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarNone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/email_logo"
+        android:layout_width="104dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/emailCheck" />
+
+    <TextView
+        android:id="@+id/emailInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:text="계정분실에 대비하여 이메일 인증이 필요합니다."
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="23dp"
+            android:ems="10"
+            android:hint="입력한거 여기 뜨게"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:text="전송요청"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_ENum"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:hint="인증번호 입력"
+            android:inputType="number|textPassword"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/sendRequest2"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:text="확인"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emailInformation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="32dp"
+        android:text="인증번호는 최대 10분간 유효합니다."
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="163dp"
+        android:background="#C6F3EB"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/why"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"
+            android:text="인증메일을 받지 못하셨나요?"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:text="1. 올바른 이메일 주소를 입력했는지 확인하세요."
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/check2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:text="2. 잘못된 이메일 주소를 입력했다면"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/check3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="30dp"
+            android:text="    이전페이지에서 이메일 주소를 변경해주세요."
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>
